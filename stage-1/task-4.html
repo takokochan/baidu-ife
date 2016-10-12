@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-<style>
-.fancy {
-  width: 500px;
-  margin: 20px auto;
-  padding: 50px;
-  border: solid blue 10px;
-/*  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;*/
-}
-</style>
-</head>
-<body>
-	<div class="fancy">
-		<p>Haha</p>
-    <p>Hehe</p>
 
-	</div>
+<head>
+    <meta charset="utf-8">
+    <style>
+/*
+  绝对定位居中
+
+
+  .bbox{
+      position: absolute;
+      width: 400px;
+      height: 200px;
+      top: calc(50% - 100px);
+      left: calc(50% - 200px);
+
+    top: 50%;   /*另一种方法
+      left: 50%;
+      transform:translate(-50%,-50%); *//*
+      background: #ccc;
+      top: 50%;
+      left: 50%;
+      
+    }
+
+
+*/
+
+/* flex方法实现居中 */
     
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body{
+      width: 100%;
+      height: 100%;
+    }
+    
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bbox {
+        width: 400px;
+        height: 200px;
+        background: #ccc;
+    }
+
+
+    .left{
+      width: 50px;
+      height: 50px;
+      background: #fc0;
+      border-radius: 0 0 50px 0;
+    }
+
+    .right {
+      width: 50px;
+      height: 50px;
+      background: #fc0;
+      border-radius:  50px 0 0 0;
+      float: right;
+      margin-top: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="bbox">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
 </body>
+
 </html>
