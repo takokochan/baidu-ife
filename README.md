@@ -32,7 +32,9 @@ Nicolas Gallagher 在A new micro clearfix hack中提供了一种看起来更清�
 
 ##stage-1 task-4
 两种方法实现剧中定位
+
 1.绝对定位
 2.flex方法 
+
 关于flex方法 ： http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool
 
