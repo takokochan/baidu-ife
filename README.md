@@ -4,7 +4,7 @@
 ## stage-1 task-3
 **三行布局有两种方法清除浮动来**
 
-*第一种 clear *
+*第一种 clear*
 
 Nicolas Gallagher 在A new micro clearfix hack中提供了一种看起来更清爽的做法
 
@@ -28,3 +28,11 @@ Nicolas Gallagher 在A new micro clearfix hack中提供了一种看起来更清�
 
 **关于 box-sizing**
 当你设置一个元素为 box-sizing: border-box; 时，此元素的内边距和边框不再会增加它的宽度。 
+
+
+##stage-1 task-4
+两种方法实现剧中定位
+1.绝对定位
+2.flex方法 
+关于flex方法 ： http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool
+
